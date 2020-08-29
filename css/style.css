@@ -18,7 +18,7 @@ body {
   line-height: 1.6;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
-  background-image: url('https://portfolio.commishes.com/image/389509/large/?p=1597959481'), url('https://pbs.twimg.com/media/EfjMbkpWsAA9Rbh?format=jpg&name=large'), url('https://pbs.twimg.com/media/EfjMdvZWAAAWJSD?format=jpg&name=large');
+  background-image: filter(url('https://portfolio.commishes.com/image/389509/large/?p=1597959481'), blur(5px));
   background-attachment: fixed;
 
   background-color: #EEEEEEAA;
@@ -60,6 +60,7 @@ a {
 }
 a:hover {
 	color: #4DB6AC;
+	filter: drop-shadow(0px 0px 10px green);
 }
 img {
 	border-radius: 10px;
