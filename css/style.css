@@ -18,17 +18,17 @@ body {
   line-height: 1.6;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
-  background-image: filter(url('https://portfolio.commishes.com/image/389509/large/?p=1597959481'), blur(5px));
+  background: url('https://portfolio.commishes.com/image/389509/large/?p=1597959481');
   background-attachment: fixed;
 
   background-color: #EEEEEEAA;
-  backdrop-filter: blur(5px);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .content-wrapper {
+	z-index: 9999;
 	color: #444;
 	padding: 1em;
 	margin: 0.3em;
