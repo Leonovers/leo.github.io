@@ -158,8 +158,13 @@ body {
 }
 
 /*Switches*/
+.switches {
+	display: inline;
+
+}
+
 .onoffswitch {
-    position: relative; width: 80px;
+    position: relative; width: 80px; margin-right: 50px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onoffswitch-checkbox {
