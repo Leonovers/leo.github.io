@@ -1,0 +1,157 @@
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans Regular'), local('OpenSans-Regular'), url(opensans_regular.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+html {
+	height: 100%;
+}
+body {
+	max-width: 35em;
+	margin: auto;
+	line-height: 1.6;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	background: url('https://portfolio.commishes.com/image/389509/large/?p=1597959481');
+	background-attachment: fixed;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #EEEEEEAA;
+	height: 100%;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.content-wrapper {
+	color: #444;
+	background-color: rgba(0,0,0,0);
+	border-radius: 10px;
+	overflow: hidden;
+}
+.content-wrapper > .header {
+	display: grid;
+	grid-template-columns: 35% auto;
+	grid-template-rows: 200px;
+	column-gap: 1em;
+	background-color: rgba(204, 204, 204, 0.8);
+	max-height: 200px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.content-wrapper > .header > .left {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	max-height: inherit;
+
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.content-wrapper > .header > .left > .profile-img {
+	border-radius: 100%;
+	width: auto;
+	height: 100%;
+}
+@media only screen and (max-width: 520px) {
+	.content-wrapper > .header > .left > .profile-img {
+		width: 100%;
+		height: auto;
+	}
+}
+.content-wrapper > .header > .right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: calc(1em - 5px);
+}
+.content-wrapper > .header > .right > h1 {
+	line-height: 1.2;
+	margin: 0px;
+	margin-top: 22px;
+	margin-bottom: 0px;
+	font-size: 30px;
+}
+@media only screen and (max-width: 720px) {
+	.content-wrapper > .header > .right > h1 {
+		font-size: calc(22px + 1vw);
+	}
+}
+.content-wrapper > .rest {
+	overflow: hidden;
+	background: #F0F0F0;
+	padding: 1.4em;
+	padding-top: 0;
+	text-align: justify;
+}
+
+.fa, .fab {
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 25px;
+}
+.buttons-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	width: 100%;
+	height: 100%;
+}
+.buttons-row  > * {
+	margin-right: 5px;
+	margin-bottom: 5px;
+	width: 25%;
+	flex-grow: 1;
+}
+@media only screen and (max-width: 720px) {
+	.buttons-row #desktop {
+		display: none;
+	}
+}
+
+
+.button {
+	position: relative;
+	z-index: 0;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	border-radius: 5px;
+	line-height: 1.1;
+	cursor: pointer;
+	color: #FFF;
+	background: #D44638;
+	transition: all 0.12s ease-out;
+	text-decoration: none;
+	overflow: hidden;
+}
+.button > p {
+	padding-right: 10px;
+}
+.button:hover {
+	opacity: 0.8;
+}
+.b-telegram {background: #0088CC}
+.b-mail {background: #D44638}
+.b-twitter {background: #55ACEE}
+.b-patreon {background: #F96854}
+.b-order {
+	font-size: 21px;
+	text-transform: uppercase;
+}
+.b-order > p {
+	transition: all 0.2s ease-out;
+}
+.b-order:hover > p {
+	margin-left: 8px;
+	margin-right: 8px;
+}
