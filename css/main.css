@@ -27,6 +27,11 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+@media only screen and (max-width: 520px) {
+	body {
+		display: block;
+	}
+}
 .content-wrapper {
 	color: #444;
 	background-color: rgba(0,0,0,0);
