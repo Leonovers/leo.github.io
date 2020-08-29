@@ -27,79 +27,51 @@ body {
 	margin: 0.3em;
 	background: #F0F0F0;
 	border-radius: 10px;
-	margin-top: 15px;
-	margin-bottom: 15px;
 }
 h1 {
 	line-height: 1.2;
 	margin-top: 18px;
 	margin-bottom: 18px;
 }
-code {
-	padding: 0.2em 0.4em;
-	margin: 0;
-	font-size: 85%;
-	background-color: rgba(27,31,35,0.05);
-	border-radius: 3px;
-	font-family: 'Ubuntu Mono', monospace;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-telegram {
-  background: #0088CC;
-  color: white;
-}
-.fa-mail-reply {
-  background: #D44638;
-  color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-a {
-	text-decoration: none;
-	-webkit-transition: color 0.3s ease;
-	-moz-transition: color 0.3s ease;
-	-o-transition: color 0.3s ease;
-	transition: color 0.3s ease;
-	color: #00796B;
-}
-a:hover {
-	color: #4DB6AC;
-}
-img {
+.profile-img {
 	border-radius: 10px;
 	display: block;
 	margin: 0 auto;
 }
-td {
+.fa, .fab {
+	padding: 10px;
+	font-size: 30px;
+	margin: 5px 2px;
+}
+.buttons-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 100%;
+}
+.buttons-row  > * {
+	margin-right: 5px;
+	margin-bottom: 5px;
+	flex-grow: 1;
+}
+.button {
+	color: #FFF;
+	text-decoration: none;
+	padding-right: 10px;
+	height: 50px;
 	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.12s ease-out;
 }
-footer {
-	margin-top: 30px;
-	color: #888;
+.button:hover {
+	opacity: 0.8;
 }
-p.before-ul {
-	display: block;
-	margin-bottom: 0;
-}
-ul.contacts {
-	margin-top: 10px;;
-	list-style-type: circle;
-}
-p.last {
-	display: block;
-	margin: 0;
-}
+.button-telegram {background: #0088CC}
+.button-mail {background: #D44638}
+.button-twitter {background: #55ACEE}
+.button-patreon {background: #F96854}
