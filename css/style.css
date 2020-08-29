@@ -22,8 +22,7 @@ body {
   background-attachment: fixed;
 
   background-color: #EEEEEEAA;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  backdrop-filter: blur(5px);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
