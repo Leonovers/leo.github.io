@@ -47,7 +47,47 @@
 			<p>We are system of three minds that works together to surpass perfection and beat eternity itself. We do it all is not for only ourselves, it's for you too. We also do two-dimensional artworks, three-dimensional artworks, 3D models (for 3d printing too), and also 3D printing itself.</p>
 			<p>We accept commissions for 2D drawings, 3D models (including for printing).</p>
 			<p>If you want to purchase something of that, then contact us with any of the ways below (preferably Telegram, you are also free to use a form on this site).</p>
-			<a href="market.html" class="button b-order">
+
+			<script src="js/jquery-3.3.1.min.js"></script>
+			<script src="js/jquery-ui.js"></script>
+			<div class="multiform" id="form">
+				<ul class="hor-menu noselect nostyle" id="menu">
+					<li class="item hl-bottom" id="2D">2D</li>
+					<li class="item" id="3D">3D</li>
+				</ul>
+				<div class="content">
+					<div class="content-2D">
+						Fuis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+					</div>
+					<div class="content-3D" style="display: none;">
+						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+					</div>
+				</div>
+			</div>
+			<script>
+				$(function() {
+					$('#menu').menu({
+						select: function(e, ui) {
+							if (!ui.item.hasClass("hl-bottom")) {
+								$(".multiform#form .hor-menu#menu>li.hl-bottom").removeClass("hl-bottom");
+								ui.item.addClass("hl-bottom");
+								switch (ui.item.attr('id')) {
+									case "2D":
+										$("#form .content-2D").css("display", "block");
+										$("#form .content-3D").css("display", "none");
+										break;
+									case "3D":
+										$("#form .content-2D").css("display", "none");
+										$("#form .content-3D").css("display", "block");
+										break;
+								}
+							}
+						}
+					});
+				});
+			</script>
+
+			<a href="https://t.me/Leonovers" class="button b-order">
 				<p>COMMISSIONS OPEN</p>
 				<i class="fas fa-long-arrow-alt-right"></i>
 			</a>
