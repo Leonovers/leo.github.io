@@ -203,14 +203,12 @@
 		height: 100%;
 	}
 	.item {
-		position: relative;
 		max-width: 300px;
 	}
 	.preview {
 		max-width: 300px;
 	}
 	.cards .title {
-		position: absolute;
 		text-align: center;
 		height: 100%;
 	}
