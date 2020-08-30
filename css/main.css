@@ -204,7 +204,7 @@
 	}
 	.item {
 		position: relative;
-		background: #f5f5f5;
+		background-image: 'url(../images/bg.webp)';
 		max-width: 300px;
 	}
 	.preview {
