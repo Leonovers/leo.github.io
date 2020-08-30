@@ -203,13 +203,13 @@
 		height: 100%;
 	}
 	.item {
-		max-width: 300px;
+		max-width: 100%;
+		max-height: 200px;
 	}
 	.preview {
 		position: relative;
 		background-size: cover;
-		max-width: 300px;
-		height: 450px;
+		height: 100%;
 	}
 	.cards .title {
 		position: absolute;
