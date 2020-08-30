@@ -213,7 +213,7 @@
 		height: 100%;
 	}
 	.cards .title {
-		color: --colorSheet;
+		color: var(--colorSheet);
 		position: absolute;
 		text-align: center;
 		height: 50px;
