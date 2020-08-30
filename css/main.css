@@ -220,6 +220,8 @@
     	left: 0px;
     	width: 100%;
     	margin-bottom: 0px;
+    	padding-top: 10px;
+    	backdrop-filter: opacity(0.3);
 	}
 	.cards .description {
 
