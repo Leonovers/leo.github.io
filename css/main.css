@@ -194,7 +194,7 @@
 	}
 
 /* Cards */
-	.cards-block {
+	.cards {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -203,18 +203,18 @@
 		height: 100%;
 	}
 	.item {
+		position: absolute;
 		background: #f5f5f5;
 		max-width: 300px;
 	}
 	.preview {
-		position: absolute;
 		max-width: 300px;
 	}
-	.card .title {
-		position: relative;
+	.cards .title {
+		position: absolute;
 		text-align: center;
 		height: 100%;
 	}
-	.card .description {
+	.cards .description {
 
 	}
