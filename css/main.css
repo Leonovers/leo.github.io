@@ -206,7 +206,9 @@
 		max-width: 300px;
 	}
 	.preview {
+		background-size: cover;
 		max-width: 300px;
+		height: 600px;
 	}
 	.cards .title {
 		text-align: center;
