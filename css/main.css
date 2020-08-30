@@ -16,25 +16,23 @@
 
 /* Base */
 	body {
+		position: relative;
 		max-width: 35em;
-		margin: auto;
-		margin-top: 1em;
+		margin: 1em auto;
 		line-height: 1.6;
 		font-size: 18px;
 		font-family: 'Open Sans', sans-serif;
+		
 		background: url('../images/BG1.jpg');
-		background-attachment: fixed;
-
-		position: relative;
-
 		background-color: var(--colorBackground);
 		background-position: top;
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-attachment: fixed;
 	}
 	@media only screen and (max-width: 520px) {
 		body {
-			margin-top: auto;
+			margin: auto auto;
 		}
 	}
 
@@ -54,8 +52,7 @@
 		column-gap: 1em;
 		background-color: rgba(204, 204, 204, 0.8);
 		max-height: 200px;
-		padding-left: 1em;
-		padding-right: 1em;
+		padding: 0 1em;
 	}
 	.content-wrapper > .header > .left {
 		display: flex;
@@ -64,9 +61,7 @@
 		justify-content: center;
 		align-items: center;
 		max-height: inherit;
-
-		padding-top: 1em;
-		padding-bottom: 1em;
+		padding: 1em 0;
 	}
 	.content-wrapper > .header > .left > .profile-img {
 		border-radius: 100%;
@@ -89,7 +84,6 @@
 		line-height: 1.2;
 		margin: 0px;
 		margin-top: 22px;
-		margin-bottom: 0px;
 		font-size: 30px;
 	}
 	@media only screen and (max-width: 720px) {
@@ -107,8 +101,7 @@
 
 /* Buttons */
 	.fa, .fab {
-		padding-left: 8px;
-		padding-right: 8px;
+		padding: 0 8px;
 		font-size: 25px;
 	}
 	.buttons-row {
@@ -167,8 +160,7 @@
 		transition: all 0.2s ease-out;
 	}
 	.b-order:hover > p {
-		margin-left: 8px;
-		margin-right: 8px;
+		margin: 0 8px;
 	}
 
 /* Horizontal menu */
