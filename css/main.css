@@ -207,9 +207,11 @@
 		max-width: 300px;
 	}
 	.preview {
+		position: absolute;
 		max-width: 300px;
 	}
 	.card .title {
+		position: relative;
 		text-align: center;
 		height: 100%;
 	}
