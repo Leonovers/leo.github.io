@@ -210,6 +210,7 @@
 	}
 	.preview {
 		position: relative;
+		border-radius: 7px;
 		background-size: cover;
 		height: 100%;
 	}
