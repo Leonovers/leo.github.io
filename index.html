@@ -47,64 +47,65 @@
 			<p>We are system of three minds that works together to surpass perfection and beat eternity itself. We do it all is not for only ourselves, it's for you too. We also do two-dimensional artworks, three-dimensional artworks, 3D models (for 3d printing too), and also 3D printing itself.</p>
 			<p>We accept commissions for 2D drawings, 3D models (including for printing).</p>
 			<p>If you want to purchase something of that, then contact us with any of the ways below (preferably Telegram, you are also free to use a form on this site).</p>
-			<div class="multiform" id="form">
-				<ul class="hor-menu" id="menu">
-					<li class="item hl-bottom" id="2D">2D</li>
-					<li class="item" id="3D">3D</li>
-				</ul>
-				<div class="content">
-					<div class="content-2D">
-						<div class="cards">
-						  <div class="item" id="1">
-						    <div class="preview" style="background-image: url(/images/bg.webp);">
-						    	<p class="title">Card name</p>
-						    </div>
-						    <p class="description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
-						  </div>
-						  <div class="item" id="2">
-						    <div class="preview" style="background-image: url(/images/bg.webp);">
-						    	<p class="title">Card name</p>
-						    </div>
-						    <p class="description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
-						  </div>
-						  <div class="item" id="3">
-						    <div class="preview" style="background-image: url(/images/bg.webp);">
-						    	<p class="title">Card name</p>
-						    </div>
-						    <p class="description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
-						  </div>
+			<div class="cards">
+				<div class="item expanded" id='1'>
+					<div class="preview" style="background-image: url(images/bg.webp);">
+						<div class="title-box">
+							<p class="title">Portraits</p>
+							<p class="description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
 						</div>
 					</div>
-					<div class="content-3D" style="display: none;">
-						Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+				</div>
+				<div class="item" id='2'>
+					<div class="preview" style="background-image: url(images/bg.webp);">
+						<div class="title-box">
+							<p class="title">Stickers</p>
+							<p class="description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item" id='3'>
+					<div class="preview" style="background-image: url(images/bg.webp);">
+						<div class="title-box">
+							<p class="title">Landscapes</p>
+							<p class="description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item" id='4'>
+					<div class="preview" style="background-image: url(images/bg.webp);">
+						<div class="title-box">
+							<p class="title">Modeling</p>
+							<p class="description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item" id='5'>
+					<div class="preview" style="background-image: url(images/bg.webp);">
+						<div class="title-box">
+							<p class="title">Play with me</p>
+							<p class="description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 			<script src="js/jquery-3.3.1.min.js"></script>
-			<script src="js/jquery-ui-1.11.4.min.js"></script>
 			<script>
-				$(function() {
-					$('#menu').menu({
-						select: function(e, ui) {
-							if (!ui.item.hasClass("hl-bottom")) {
-								$(".multiform#form .hor-menu#menu>li.hl-bottom").removeClass("hl-bottom");
-								ui.item.addClass("hl-bottom");
-								switch (ui.item.attr('id')) {
-									case "2D":
-										$("#form .content-2D").css("display", "block");
-										$("#form .content-3D").css("display", "none");
-										break;
-									case "3D":
-										$("#form .content-2D").css("display", "none");
-										$("#form .content-3D").css("display", "block");
-										break;
-								}
-							}
+				$('.cards .item').click(function() {
+					if ($(this).find('.title-box').hasClass("expanded")) {
+						$(this).find('.title-box').removeClass("expanded");
+						return;
+					}
+					var id = $(this).attr('id')
+					$('.cards').children('.item').each(function(){
+						if (id != $(this).attr('id')) {
+							$(this).find('.title-box').removeClass("expanded");
+						} else {
+							$(this).find('.title-box').addClass("expanded");
 						}
 					});
 				});
 			</script>
-
 			<a href="https://t.me/Leonovers" class="button b-order">
 				<p>COMMISSIONS OPEN</p>
 				<i class="fas fa-long-arrow-alt-right"></i>

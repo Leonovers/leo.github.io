@@ -9,7 +9,7 @@
 /* Base */
 	body {
 		position: relative;
-		max-width: 35em;
+		max-width: 36em;
 		margin: 1em auto;
 		line-height: 1.6;
 		font-size: 18px;
@@ -157,76 +157,63 @@
 		margin: 0 8px;
 	}
 
-/* Horizontal menu */
-	.hor-menu {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		padding-left: 0;
-	}
-	@media only screen and (max-width: 720px) {
-		.hor-menu {
-			margin-bottom: 2vh;
-		}
-	}
-	.hor-menu .item {
-		height: 100%;
-		min-width: 80px;
-		flex-grow: 1;
-		cursor: pointer;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0 5px;
-	}
-	.hor-menu .item .text {
-		margin: auto;
-		padding: 0 5px 0 5px;
-	}
-
-/* Highlight */
-	.hl-bottom {
-		max-height: calc(100% - 3px);
-		border-bottom-style: solid;
-		border-bottom-width: 3px;
-		border-bottom-color: var(--colorText);
-	}
-
 /* Cards */
 	.cards {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		align-content: center;
 		width: 100%;
-		height: 100%;
+		margin-left: 5px;
 	}
-	.item {
+	.cards .item {
+		margin-right: 10px;
+		margin-bottom: 10px;
+		cursor: pointer;
+		height: 180px;
 		width: 40%;
-		height: 130px;
+		min-width: 100px;
 		flex-grow: 1;
-		margin: 5px;
+		transition: all 0.15s ease-out;
 	}
-	.preview {
+	.cards .item:hover .title-box {
+		background-color: rgba(0,109,163,0.8);
+	}
+	.cards .preview {
 		position: relative;
 		border-radius: 7px;
 		background-size: cover;
 		height: 100%;
+		overflow: hidden;
 	}
-	.cards .title {
-		color: var(--colorSheet);
+	.cards .title-box {
+		display: flex;
+		flex-direction: column;
 		position: absolute;
-		text-align: center;
-		height: fit-content;
-    	bottom: 0px;
-    	right: 100%;
-    	left: 0px;
-    	width: 100%;
-    	margin-bottom: 0px;
-    	padding-top: 10px;
-    	backdrop-filter: opacity(0.3);
+		width: 100%;
+		bottom: 0;
+		color: var(--colorSheet);
+		background-color: rgba(0,0,0,0.483);
+		height: 20%;
+		transition: all 0.15s ease-out;
 	}
-	.cards .description {
-
+	.cards .item p {
+		text-align: left;
+		margin: 0;
+		margin-left: 10px;
+	}
+	.cards .item .title {
+		font-weight: 600;
+		margin-top: 3px;
+	}
+	.cards .item .description {
+		height: 0;
+		overflow: hidden;
+		font-weight: 400;
+		font-size: 18px;
+	}
+	.cards .item .expanded, .cards .item:hover .expanded {
+		height: 100%;
+	}
+	.cards .item .title-box.expanded > .description {
+		height: 100%;
 	}
