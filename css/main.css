@@ -175,6 +175,11 @@
 		flex-grow: 1;
 		transition: all 0.15s ease-out;
 	}
+	@media only screen and (max-width: 720px) {
+		.cards .item {
+			width: 100%;
+		}
+	}
 	.cards .item:hover .title-box {
 		background-color: rgba(0,109,163,0.8);
 	}
@@ -207,9 +212,8 @@
 	}
 	.cards .item .description {
 		height: 0;
-		overflow: hidden;
 		font-weight: 400;
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.cards .item .expanded, .cards .item:hover .expanded {
 		height: 100%;
