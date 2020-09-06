@@ -140,7 +140,7 @@
 		opacity: 0.8;
 	}
 	.b-order {
-		margin-top: 0.7em;
+		margin-top: calc(1em - 10px);
 		font-size: 21px;
 		text-transform: uppercase;
 	}
