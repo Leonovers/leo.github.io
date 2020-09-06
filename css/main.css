@@ -1,10 +1,10 @@
 /* Variables */
 	:root {
-		--colorText: #444;
-		--colorBackground: #D9D9D9;
-		--colorSheet: #F0F0F0;
+		--colorText: #EEE;
+		--colorBackground: #070A0D;
+		--colorSheet: #1F2614;
+		--colorPanel: rgba(77, 89, 64, 0.8);
 	}
-
 
 /* Base */
 	body {
@@ -14,8 +14,7 @@
 		line-height: 1.6;
 		font-size: 18px;
 		font-family: 'Open Sans', sans-serif;
-		
-		background: url('../images/bg.webp');
+		background: url('../images/m7SvGxxbDDk.jpg');
 		background-color: var(--colorBackground);
 		background-position: top;
 		background-repeat: no-repeat;
@@ -42,7 +41,7 @@
 		grid-template-columns: 35% auto;
 		grid-template-rows: 200px;
 		column-gap: 1em;
-		background-color: rgba(204, 204, 204, 0.8);
+		background-color: var(--colorPanel);
 		max-height: 200px;
 		padding: 0 1em;
 	}
@@ -112,7 +111,7 @@
 		width: 25%;
 		flex-grow: 1;
 	}
-	@media only screen and (max-width: 720px) {
+	@media only screen and (max-width: 700px) {
 		.buttons-row #desktop {
 			display: none;
 		}
@@ -128,9 +127,9 @@
 		border-radius: 5px;
 		line-height: 1.1;
 		cursor: pointer;
-		color: var(--colorSheet);
-		background: var(--colorText);
-		transition: all 0.12s ease-out;
+		color: var(--colorText);
+		background: rgba(255,255,255,0.1);
+		transition: all 0.12s ease-in;
 		text-decoration: none;
 		overflow: hidden;
 	}
@@ -140,13 +139,8 @@
 	.button:hover {
 		opacity: 0.8;
 	}
-	.b-telegram {background: #0088CC}
-	.b-mail {background: #D44638}
-	.b-twitter {background: #55ACEE}
-	.b-patreon {background: #F96854}
 	.b-order {
-		background: #D44638;
-		margin-top: 1em;
+		margin-top: 0.7em;
 		font-size: 21px;
 		text-transform: uppercase;
 	}
@@ -173,19 +167,15 @@
 		width: 40%;
 		min-width: 100px;
 		flex-grow: 1;
-		transition: all 0.15s ease-out;
 	}
-	@media only screen and (max-width: 720px) {
+	@media only screen and (max-width: 550px) {
 		.cards .item {
 			width: 100%;
 		}
 	}
-	.cards .item:hover .title-box {
-		background-color: rgba(0,109,163,0.8);
-	}
 	.cards .preview {
 		position: relative;
-		border-radius: 7px;
+		border-radius: 5px;
 		background-size: cover;
 		height: 100%;
 		overflow: hidden;
@@ -196,10 +186,13 @@
 		position: absolute;
 		width: 100%;
 		bottom: 0;
-		color: var(--colorSheet);
+		color: var(--colorText);
 		background-color: rgba(0,0,0,0.483);
 		height: 20%;
-		transition: all 0.15s ease-out;
+		transition: all 0.16s ease-out;
+	}
+	.cards .item:hover .title-box {
+		background-color: var(--colorPanel);
 	}
 	.cards .item p {
 		text-align: left;
