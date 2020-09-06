@@ -4,6 +4,7 @@
 		--colorBackground: #070A0D;
 		--colorSheet: #1F2614;
 		--colorPanel: rgba(77, 89, 64, 0.8);
+		--colorHighlight: #6F8C30;
 	}
 
 /* Base */
@@ -143,6 +144,10 @@
 		margin-top: calc(1em - 10px);
 		font-size: 21px;
 		text-transform: uppercase;
+	}
+	.b-order:hover {
+		opacity: 1;
+		background: var(--colorHighlight);
 	}
 	.b-order > p {
 		transition: all 0.2s ease-out;
