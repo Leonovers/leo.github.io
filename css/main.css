@@ -193,7 +193,7 @@
 		color: var(--colorText);
 		background-color: rgba(0,0,0,0.483);
 		height: 20%;
-		transition: all 0.16s ease-out;
+		transition: all 0.16s ease-in-out;
 	}
 	.cards .item:hover .title-box {
 		background-color: var(--colorPanel);
@@ -209,12 +209,12 @@
 	}
 	.cards .item .description {
 		height: 0;
+		overflow-y: hidden;
 		font-weight: 400;
 		font-size: 16px;
+		transition: all 0.16s ease-in-out;
 	}
-	.cards .item .expanded, .cards .item:hover .expanded {
+	.cards .item .expanded, .cards .item:hover .expanded, .cards .item .title-box.expanded > .description {
 		height: 100%;
-	}
-	.cards .item .title-box.expanded > .description {
-		height: 100%;
+		opacity: 1;
 	}
