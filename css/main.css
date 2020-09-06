@@ -169,8 +169,12 @@
 		flex-grow: 1;
 	}
 	@media only screen and (max-width: 550px) {
+		.cards {
+			margin-left: 0;
+		}
 		.cards .item {
 			width: 100%;
+			margin-right: 0;
 		}
 	}
 	.cards .preview {
