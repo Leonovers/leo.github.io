@@ -137,6 +137,7 @@
 		transition: all 0.12s ease-in;
 		text-decoration: none;
 		overflow: hidden;
+		outline: none;
 	}
 	.button > p {
 		padding-right: 10px;
