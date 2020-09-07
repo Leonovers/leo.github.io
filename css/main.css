@@ -5,6 +5,7 @@
 		--colorSheet: #1F2614;
 		--colorPanel: rgba(77, 89, 64, 0.8);
 		--colorHighlight: #6F8C30;
+		--roundness: 5px;
 	}
 
 /* Base */
@@ -125,7 +126,7 @@
 		justify-content: center;
 		align-items: center;
 		height: 44px;
-		border-radius: 5px;
+		border-radius: var(--roundness);
 		line-height: 1.1;
 		cursor: pointer;
 		color: var(--colorText);
@@ -184,7 +185,7 @@
 	}
 	.cards .preview {
 		position: relative;
-		border-radius: 5px;
+		border-radius: var(--roundness);
 		background-size: cover;
 		height: 100%;
 		overflow: hidden;
