@@ -23,11 +23,6 @@
 		background-size: cover;
 		background-attachment: fixed;
 	}
-	@media only screen and (max-width: 520px) {
-		body {
-			margin: auto auto;
-		}
-	}
 
 /* Content */
 	.content-wrapper {
@@ -37,6 +32,14 @@
 		overflow: hidden;
 
 		margin: auto;
+	}
+	@media only screen and (max-width: 648px) {
+		body {
+			margin: auto auto;
+		}
+		.content-wrapper {
+			border-radius: 0px;
+		}
 	}
 	.content-wrapper > .header {
 		display: grid;
